@@ -1,0 +1,16 @@
+- period: "Colonial Period <br> <- 1945"
+  nametag: "colonial_period"
+  content: "Vietnam under French Indochina"
+
+- period: "Indochina War<br>1945 - 1954"
+  nametag: "indochinawar"
+  content: "At the end of WW II, Vietnam claims its independence"
+
+- period: "Vietnam War<br>1955 - 1975"
+  nametag: "vietnamwar"
+
+- period: "Unification Period<br>1975 - >"
+  nametag: "unification"
+
+- period: "Renovation Period<br>1986 - >"
+  nametag: "renovation"

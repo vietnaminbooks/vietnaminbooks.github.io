@@ -1,0 +1,36 @@
+# Website settings
+
+    
+# Bio settings
+name: "V.I.B"
+title: "Vietnam in books"
+fullname: "Vietnam in Books club"
+explanation: "means Very Itty Bitty. It is an individual who is not only small but excels at being a ninja and evading edators, V.I.B. are not only cute but also deadly. They fully prove that big things really do come in small packages."
+slogan: "In books we trust!"
+description: "A book club<br> on Vietnam history"
+thumbnail_path: "home_bg.jpg"
+ad: |
+    Want to commit to <font color="#f39c12"> systematic reading</font> habits?
+    <br> Love history and looking for <font color="#f39c12">good conversations and companies</font>? 
+    <br> Join us and build up our reading group together.
+
+# contact
+contact_urls:
+  facebook: "https://www.facebook.com/groups/1940649582836132/"
+  mail: "mailto:vietnaminbooks@gmail.com"
+
+# Jekyll build settings
+paginate: 10
+paginate_path: "/notes/page:num"
+permalink: "/notes/:year/:month/:day/:title/"
+sass:
+  sass_dir: "/assets/css"
+  style: :compressed
+highlighter: rouge
+timezone: 'Asia/Seoul'
+
+# Plugins (GitHub Pages only support a few)
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-paginate

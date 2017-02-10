@@ -1,0 +1,35 @@
+- period: "Colonial Period <br> <- 1945"
+  nametag: "colonial_period"
+  title: "Colonial Period"
+  description: |
+          France progressively carved for itself a huge colony, 
+          which would form French Indochina in 1887. 
+          France continued to rule Vietnam as a colony until 
+          France's defeat in the First Indochina War and the 
+          proclamation of Vietnam's independence in 1954."
+  color: "light"
+
+- period: "Indochina War<br>1945 - 1954"
+  nametag: "indochinawar"
+  title: "Indochina War"
+  description: "..."
+  content: "At the end of WW II, Vietnam claims its independence"
+  color: "dark"
+
+- period: "Vietnam War<br>1955 - 1975"
+  nametag: "vietnamwar"
+  title: "Vietnam War"
+  description: "..."
+  color: "light"
+
+- period: "Unification Period<br>1975 - >"
+  nametag: "unification"
+  title: "Unification Period"
+  description: "..."
+  color: "dark"
+
+- period: "Renovation Period<br>1986 - >"
+  nametag: "renovation"
+  title: "Unification Period"
+  description: "..."
+  color: "light"

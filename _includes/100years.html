@@ -1,0 +1,103 @@
+<!-- =========================
+     VIETNAM IN BOOKS
+        100 YEARS
+
+    From Hann with care
+============================== -->
+
+
+{% for period in site.data.periods %}
+<section class="{{period.color}} page" id="{{ period.nametag }}">
+
+<!-- PERIOD HEADLINE-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="section_title">
+                <h2>{{period.title}}</h2>
+                <p align="justify">{{ period.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- BOOK DETAILS-->
+{% for book in site.data.booklist %}
+{% if book.nametag == period.nametag %}
+<div class="inner_about_area">
+    <div class="container">
+        <div class="row wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+            
+            <!-- book cover-->
+            <div class="col-sm-6 col-md-4 col-4">
+                <div class="about_phone">
+                    <img src="{{ book.img }}" alt="" width="250" data-toggle="modal" data-target="#{{book.name}}">
+                </div>
+            </div>
+            <!-- end book cover-->
+            
+            <!-- book details-->
+            <div class="col-sm-6 col-md-8 col-8">
+                <div class="inner_about_title">
+                    <h2>{{ book.title }}</h2>
+                    
+                    <p align="justify"> {{ book.description }}
+                    </p>
+                    
+                    {% if book.details %}
+                    <p align="right" style="font-size:14px"   data-toggle="collapse" data-target="#{{book.name}}"> <a >More details. </a></p>
+                    {% endif %}
+
+                </div>
+            </div>
+            <!-- end book details-->
+
+        </div>
+
+
+        {% if book.details %}
+        <!-- more details-->
+        
+        <div id="{{book.name}}" class="collapse">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="single_about_area" >
+                                <!-- ICON -->
+                    <div><i class="pe-7s-close-circle"></i></div>
+                                <!-- HEADING DESCRIPTION -->
+                    <h3>Comments</h3>
+                    <p align="justify">{{book.hate}}. <a href="{{book.hate_link}}"> >> </a> </p>
+                                
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="single_about_area" >
+                                <!-- ICON -->
+                    <div><i class="pe-7s-check"></i></div>
+                                <!-- HEADING DESCRIPTION -->
+                    <h3>Comments</h3>
+                    <p align="justify">{{book.love}}. <a href="{{book.love_link}}"> >> </a> </p>                                
+                </div>            
+            </div>
+
+        </div>
+
+        </div>
+        <!-- end more details-->
+        {% endif %}
+
+
+
+    </div>
+</div>
+{% endif %}
+{% endfor %}
+<!-- END BOOK DETAILS-->
+
+
+</section>
+{% endfor %}
+
